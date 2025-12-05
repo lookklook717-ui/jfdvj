@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Розвиток емоційного інтелекту дітей дошкільного віку</title>
+  <meta name="description" content="Ресурси, вправи та поради для розвитку емоційного інтелекту у дітей дошкільного віку. Матеріали для батьків і вихователів." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#4F46E5;
+      --muted:#6B7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg, #f7f9fc 0%, #fbfdff 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:28px;}
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:18px;margin-bottom:20px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#06b6d4);
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;
+      box-shadow:0 6px 20px rgba(79,70,229,0.18);
+      flex:0 0 56px;
+    }
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{
+      background:var(--card);padding:28px;border-radius:var(--radius);
+      display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:center;
+      box-shadow:0 8px 30px rgba(15,23,42,0.05);
+    }
+    .hero h1{margin:0;font-size:28px}
+    .hero p{color:var(--muted);margin-top:10px}
+    .cta{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.05)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .section{margin-top:22px}
+    h2{margin:0 0 10px 0;font-size:20px}
+    ul{padding-left:18px}
+    .activities li{margin-bottom:8px}
+    .resource-list{display:flex;flex-direction:column;gap:10px}
+    .resource-item{display:flex;gap:12px;align-items:flex-start}
+    .resource-thumb{width:80px;height:56px;border-radius:8px;background:#eef2ff;flex:0 0 80px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+    .faq-item{margin-bottom:8px}
+    footer{margin-top:30px;padding:18px 0;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center}
+    /* Responsive */
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      nav{display:none}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      .grid{grid-template-columns:1fr}
+      .container{padding:16px}
+    }
+    /* Simple accordion */
+    .accordion button{
+      width:100%;text-align:left;padding:10px;border-radius:8px;border:1px solid #eef2f6;background:white;cursor:pointer;font-weight:600;
+    }
+    .accordion .panel{padding:10px 12px;border-left:3px solid var(--accent);background:#fbfdff;margin-top:8px;border-radius:8px}
+    /* small tags */
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef2ff;color:var(--accent);font-weight:600;font-size:13px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef6;background:transparent}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media(max-width:640px){.contact-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#" aria-label="Головна">
+        <div class="logo">EQ</div>
+        <div>
+          <div style="font-weight:700">Розвиток емоційного інтелекту</div>
+          <div style="font-size:13px;color:var(--muted)">для дітей дошкільного віку</div>
+        </div>
+      </a>
+      <nav aria-label="Головне меню">
+        <a href="#about">Про проєкт</a>
+        <a href="#activities">Вправи</a>
+        <a href="#resources">Ресурси</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <h1 id="hero-title">Підтримаймо емоційний розвиток малюків</h1>
+          <p>Практичні вправи, поради для батьків та вихователів, ігри, що допомагають дітям розпізнавати, називати та керувати емоціями.</p>
+          <a class="cta" href="#activities">Почати вправи</a>
+
+          <div class="section">
+            <h2>Навіщо розвивати EQ у дошкільників?</h2>
+            <p style="color:var(--muted)">Емоційний інтелект сприяє кращій адаптації в колективі, зменшує конфлікти, підвищує самоконтроль і допомагає успішному навчанню в майбутньому.</p>
+            <ul>
+              <li>Розпізнавання емоцій</li>
+              <li>Емоційна регуляція</li>
+              <li>Емпатія та соціальні навички</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="card" aria-labelledby="quick-resources" style="text-align:left">
+          <h3 id="quick-resources" style="margin-top:0">Швидкі матеріали</h3>
+          <div class="tag">Для батьків</div>
+          <p style="color:var(--muted);margin-top:10px">Чеклист з 7 щоденних питань, які допоможуть практикувати EQ вдома.</p>
+          <div style="margin-top:12px">
+            <a href="#resources" style="text-decoration:none;font-weight:700;color:var(--accent)">Переглянути ресурси →</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section">
+        <div class="card">
+          <h2>Про проєкт</h2>
+          <p style="color:var(--muted)">Цей проєкт створено для батьків та вихователів дошкільних закладів. Він містить короткі практичні вправи, сценарії ігор, методичні поради та навчальні матеріали для роботи з дітьми від 3 до 6 років.</p>
+          <div class="grid" aria-hidden="false" style="margin-top:12px">
+            <div class="card">
+              <h3 style="font-size:16px;margin-bottom:8px">Методика</h3>
+              <p style="color:var(--muted);margin:0">Короткі заняття 10–15 хв., ігрова форма, використання емоційних карток.</p>
+            </div>
+            <div class="card">
+              <h3 style="font-size:16px;margin-bottom:8px">Аудиторія</h3>
+              <p style="color:var(--muted);margin:0">Діти дошкільного віку, батьки, вихователі, психологи дитячих закладів.</p>
+            </div>
+            <div class="card">
+              <h3 style="font-size:16px;margin-bottom:8px">Цілі</h3>
+              <p style="color:var(--muted);margin:0">Навчити розпізнавати емоції, називати їх, говорити про почуття і будувати емоційну гнучкість.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="section">
+        <h2>Вправи та ігри</h2>
+        <div class="card activities">
+          <h3 style="margin-top:0">1. «Пошта емоцій»</h3>
+          <p style="color:var(--muted)">Попросіть дитину намалювати одну емоцію, скласти лист у конверт та «надіслати» вихователю. Обговоріть, коли вона відчувала таке.</p>
+
+          <h3>2. «Дерево почуттів»</h3>
+          <p style="color:var(--muted)">На ватмані малюємо дерево; діти прикріплюють листочки з назвами емоцій і короткою ситуацією, коли таке було.</p>
+
+          <h3>3. «Мімічний театр»</h3>
+          <p style="color:var(--muted)">Діти по черзі показують емоцію мімікою, інші вгадують. Потім обговорюємо: коли таке корисно показувати, а коли краще заспокоїтися.</p>
+        </div>
+      </section>
+
+      <section id="resources" class="section">
+        <h2>Ресурси</h2>
+        <div class="card resource-list">
+          <div class="resource-item">
+            <div class="resource-thumb">Карт</div>
+            <div>
+              <strong>Емоційні картки (PDF)</strong>
+              <div style="color:var(--muted)">Збірка карток для розпізнавання емоцій — друкуйте та використовуйте у заняттях.</div>
+            </div>
+          </div>
+
+          <div class="resource-item">
+            <div class="resource-thumb">Шабл</div>
+            <div>
+              <strong>Шаблон «Дерева почуттів»</strong>
+              <div style="color:var(--muted)">Ватман-шаблон для занять у групі.</div>
+            </div>
+          </div>
+
+          <div class="resource-item">
+            <div class="resource-thumb">Порад</div>
+            <div>
+              <strong>Поради для батьків</strong>
+              <div style="color:var(--muted)">Як говорити з дитиною про емоції; список фраз, що допомагають емпатії.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>Поширені питання</h2>
+        <div class="card accordion">
+          <div class="faq-item">
+            <button aria-expanded="false" onclick="togglePanel(this)">Як часто займатися?</button>
+            <div class="panel" hidden>Краще невеликі заняття 2–3 рази на тиждень по 10–15 хвилин; важливе регулярне повторення.</div>
+          </div>
+          <div class="faq-item">
+            <button aria-expanded="false" onclick="togglePanel(this)">Який вік оптимальний?</button>
+            <div class="panel" hidden>Вправи адаптуються для дітей 3–6 років; складність регулюйте залежно від дитини.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Контакти</h2>
+        <div class="card contact-form">
+          <p style="color:var(--muted)">Залиште повідомлення — ми надішлемо методичні матеріали.</p>
+          <form onsubmit="event.preventDefault(); alert('Дякуємо! Повідомлення відправлене (демо).');" aria-label="Форма контакту">
+            <div class="contact-grid">
+              <input type="text" name="name" placeholder="Ваше ім'я" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div style="margin-top:10px;">
+              <textarea name="message" rows="5" placeholder="Ваше повідомлення"></textarea>
+            </div>
+            <div style="margin-top:10px;">
+              <button type="submit" class="cta" style="background:var(--accent);border:none">Надіслати</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <strong>Розвиток емоційного інтелекту</strong> — Матеріали для батьків і вихователів</div>
+      <div style="color:var(--muted)">Розроблено для дошкільної освіти</div>
+    </footer>
+  </div>
+
+  <script>
+    function togglePanel(btn){
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      var panel = btn.nextElementSibling;
+      if(panel){
+        if(panel.hidden){ panel.hidden = false; }
+        else { panel.hidden = true; }
+      }
+    }
+  </script>
+</body>
+</html>
